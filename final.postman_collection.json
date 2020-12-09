@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "7acde0b7-2207-4f00-aa24-9a44faf33bc4",
+		"name": "final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Details about a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user?id=<integer>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "<integer>",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": -16066058,\n \"message\": \"labore id consequat\"\n}"
+				},
+				{
+					"name": "Details about a user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-next",
+							"value": "elit",
+							"description": "A link to the next page of responses"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"id\": 35017106,\n \"name\": \"ea laborum dolore\",\n \"tag\": \"do cupidatat cillum ex sed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "whole numbers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":4,\r\n    \"y\":3,\r\n    \"z\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "whole numbers with decimals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":4.2,\r\n    \"y\":5.2,\r\n    \"z\":5.9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "negative numbers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":-3,\r\n    \"y\":-5,\r\n    \"z\":-5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "letters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":abc,\r\n    \"y\":3,\r\n    \"z\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blank variable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":,\r\n    \"y\":3,\r\n    \"z\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decimals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":.04,\r\n    \"y\":.03,\r\n    \"z\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "letters and numbers in the same variable ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":45w,\r\n    \"y\":e3,\r\n    \"z\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Numbers in thousands",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":46074,\r\n    \"y\":3093,\r\n    \"z\":593\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "letters, numbers, and decimals in the same variable  ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":45900w,\r\n    \"y\":e3,\r\n    \"z\":5.98\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-averywhelan.cloudfunctions.net/function-area_of_a_triangle",
+					"protocol": "https",
+					"host": [
+						"us-central1-averywhelan",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-area_of_a_triangle"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "http://petstore.swagger.io/v1",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
