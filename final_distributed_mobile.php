@@ -1,6 +1,6 @@
 <?php
 //echo "line 2 hello";
-
+// lines of code provide through the lecture 
 $x = "";
 $y = "";
 $z = "";
